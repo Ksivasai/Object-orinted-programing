@@ -1,0 +1,24 @@
+//Interface in java.
+
+/*program*/
+interface Upper
+{
+		int a=10;
+		void add();
+}
+class Under implements Upper
+{
+		public void add()
+		{
+			System.out.println("under Class");
+	}
+}
+
+class IInterface
+{
+		public static void main(String args[])
+		{
+			Under un=new Under();
+     		un.add();
+		}
+}

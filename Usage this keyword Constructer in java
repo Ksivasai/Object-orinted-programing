@@ -1,0 +1,29 @@
+//this keyword on constructor and methods.
+
+/* program */
+
+class This_type
+{
+	int a,b;
+	String s;
+	This_type()	
+	{
+		this(10,20);
+		System.out.println("this is default constructor");
+	}
+	 This_type(int a,int b)
+	{
+		this.a=b;
+		this.b=a;
+		this.disp();
+	}
+	void disp()
+	{
+		System.out.println("a is:"+a);
+		System.out.println("b is:"+b);
+	}
+	public static void main(String args[])
+	{
+		This_type re=new This_type();	
+	}
+}

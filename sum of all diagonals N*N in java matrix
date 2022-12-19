@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class NintoNmatrix{
+    public static void main(String[] args) {
+        Scanner inpt=new Scanner(System.in);
+        System.out.println("enter size of N*N matrix");
+        int n=inpt.nextInt();
+        int a[][] = new int[n][n];
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                a[i][j]=inpt.nextInt();
+            }
+        }
+        int dignalSize=0;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                if(i==j || i+j==n-1){
+                    dignalSize+=a[i][j];
+                }
+            }
+        }
+        System.out.println("sum of diognals of n*n matrix"+dignalSize);
+    }
+}

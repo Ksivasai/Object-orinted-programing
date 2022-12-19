@@ -1,0 +1,32 @@
+//Final keyword & super keyword
+
+/*program*/
+final class FinalClass extends New
+{
+	final int a=10;
+		int b=90;
+		final void display()
+		{
+			super.display();
+			System.out.println("final keyword a:"+a);
+			System.out.println("normal keyword a:"+b);
+		}
+}
+class New 
+{
+		int a=19;
+		int b=12;
+	void display()
+		{
+			System.out.println("final keyword a:"+a);
+			System.out.println("normal keyword a:"+b);
+		}
+}
+class MainClass
+{
+	public static void main(String args[])
+		{
+	   		FinalClass n1=new FinalClass();
+       		n1.display();
+    	}
+}

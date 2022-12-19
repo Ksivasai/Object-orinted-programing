@@ -1,0 +1,46 @@
+//Super keyword and multipule inheritance
+ 
+     /*program*/
+   class Base
+{
+			int i=10;
+		int j=23;
+		void display(int k,int l)
+	{
+			System.out.println("Base k:"+k);
+			System.out.println("Base m:"+l);
+	}
+}
+class Multipule extends Base
+{
+		int i=10;
+	int j=23;
+		void display(int k,int l,int m)
+		{
+			super.display(k,l);
+        		System.out.println("Multipule k:"+k);
+			System.out.println("Multipule m:"+m);
+			System.out.println("Multipule l:"+l);
+		}
+}
+class Derived extends Multipule
+{
+	int i=10;
+		int j=23;
+	void display(int k,int l,int m,int n)
+		{
+			super.display(k,l,m);
+			System.out.println("Derived k:"+k);
+			System.out.println("Derived m:"+m);
+			System.out.println("Derived l:"+l);
+			System.out.println("Derived n:"+n);
+	}
+}
+class Super
+{
+		public static void main(String args[])
+		{
+	  	 Derived n1=new Derived();
+          n1.display(19,20,30,40);
+    	}
+}

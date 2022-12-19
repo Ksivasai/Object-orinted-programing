@@ -1,0 +1,26 @@
+//Develop a java program to create ,which contains data & methods ,create an object to access those members.
+
+ /*program*/
+
+class First
+{
+	int a,b;
+	String s;
+	void create(int a,int b)
+	{
+		a=b;
+		b=a;
+		disp();
+	}
+	void disp()
+	{
+		System.out.println("a is:"+a);
+		System.out.println("b is:"+b);
+	}
+	public static void main(String args[])
+	{
+		First re=new First();
+		re.create(10,20);
+	}
+}
+

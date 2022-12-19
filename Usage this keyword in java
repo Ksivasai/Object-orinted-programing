@@ -1,0 +1,30 @@
+//This(this) keyword on method arguments.
+/*program*/
+class This_type
+{
+	int a,b;
+	String s;
+	This_type()
+		
+	{
+		System.out.println("this is default constructer");
+	}
+	
+	 create(int a,int b)
+	{
+		this.a=b;
+		this.b=a;
+		disp(this);
+	}
+	void disp()
+	{
+		System.out.println("a is:"+a);
+		System.out.println("b is:"+b);
+	}
+	public static void main(String args[])
+	{
+		This_type re=new This_type();
+        re.create(10,20);
+	}
+}
+ 
